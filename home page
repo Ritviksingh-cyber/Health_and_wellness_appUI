@@ -1,0 +1,30 @@
+//home page coding in flutter
+import 'package:flutter/material.dart';
+import 'package:flutter_projects/utils/routes.dart';
+
+import '../widgets/drawer.dart';
+
+    class HomePage extends StatelessWidget {
+  final int days = 30; //integer type value
+   final String name="Ritvik";//string type of value
+    
+      @override
+      Widget build(BuildContext context)
+      {
+        return Scaffold
+          (
+          backgroundColor: Colors.lightBlueAccent,
+          appBar:AppBar
+            (
+            title:const Text("Let's make you Healthy", style: TextStyle(fontWeight: FontWeight.bold),),//used to set the tittle of our home page in application app bar
+          ),
+          body: Center(
+            child:Container(
+           child: Text("Welcome to the $days days work of health app by $name"),
+          ),
+          ),
+          drawer: MyDrawer(),
+        );
+      }
+    }
+    
