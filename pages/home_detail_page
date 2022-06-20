@@ -1,6 +1,9 @@
 // ignore_for_file: use_key_in_widget_constructors
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_projects/pages/precautions.dart';
+import 'package:flutter_projects/utils/routes.dart';
 
 import '../models/catalog.dart';
 
@@ -17,6 +20,12 @@ class HomeDetailPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title:Text(catalog.name),
+      ),
+      floatingActionButton: FloatingActionButton(
+      onPressed: ()=>Navigator.pushNamed(context, MyRoutes.precautionRoute),
+        //backgroundColor: Colors.red,
+        child: Icon(CupertinoIcons.hand_point_right_fill),
+
       ),
       bottomNavigationBar: ButtonBar(),
       body: Container(
