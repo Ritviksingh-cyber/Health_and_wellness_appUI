@@ -10,6 +10,20 @@ class Precautions extends StatelessWidget {
         backgroundColor: Colors.transparent,
         title:Text("Precautionary Measures"),
       ),
-    );
+      body: Column(
+        children: [
+          Expanded(
+              child: SingleChildScrollView(
+                child: Container(
+                  padding: const EdgeInsets.all(20),
+                  alignment: Alignment.topCenter,
+                  color: Colors.red,
+                  child: (Text("hello",
+                  )),
+                ),
+              ))
+        ],
+      )
+   );
   }
 }
