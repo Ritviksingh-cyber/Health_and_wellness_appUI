@@ -1,26 +1,36 @@
 //home page coding in flutter
 import 'package:flutter/material.dart';
 import 'package:flutter_projects/models/catalog.dart';
+import 'package:flutter_projects/pages/home_detail_page.dart';
 import '../widgets/drawer.dart';
 import '../widgets/item_widget.dart';
 
-class HomePage extends StatelessWidget {
-  final int days = 30; //integer type value
-  final String name = "Ritvik"; //string type of value
+class HomePage extends StatefulWidget {
 
+  const HomePage({Key? key}) : super(key: key);
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  final int days = 30;
+ //integer type value
+  final String name = "Ritvik";
+
+ //string type of value
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor:Colors.white70,
       body:SafeArea(
         child: Container(
-          padding:EdgeInsets.all(32.0),
+          padding:const EdgeInsets.all(32.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children:[
-              CatalogHeader(),
-              if (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
-                Expanded
+              const CatalogHeader(),
+              if (CatalogModel.items.isNotEmpty)
+                const Expanded
                   (
                     child: CatalogGrid()
                 )
@@ -39,6 +49,8 @@ class HomePage extends StatelessWidget {
 
 
 class CatalogGrid extends StatelessWidget {
+  const CatalogGrid({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
@@ -52,7 +64,17 @@ class CatalogGrid extends StatelessWidget {
         itemBuilder:(context, index)
         {
     final catalog = CatalogModel.items[index];
-    return CatalogItem( catalog: catalog,);
+    return InkWell(
+      onTap: ()=>Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context)=>HomeDetailPage(
+                  catalog: catalog,
+              ),
+          ),
+      ),
+        child: CatalogItem( catalog: catalog)
+    );
 
     }
     );
@@ -61,31 +83,49 @@ class CatalogGrid extends StatelessWidget {
 
 class CatalogItem extends StatelessWidget {
    final Item catalog;
-   const CatalogItem({required this.catalog})
-       :assert(catalog != null);
+   // ignore: use_key_in_widget_constructors
+   const CatalogItem({required this.catalog});
 
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: GridTile(
-          child: Image.asset(catalog.image),
-        footer: Container(
-      child: Text(
-      catalog.name,
-        style: const TextStyle(fontWeight: FontWeight.bold),),
-        padding: const EdgeInsets.all(4),//PADDING is for name section on grid illness
-        decoration:const BoxDecoration(
-          color:Colors.yellow,
+    return GridTile(
+      child:
+        Column(
+            children:[ 
+              CatalogImage(
+            image:catalog.image,
         ),
-    ),
+    ]),
+      footer: Container(
+    child: Text(
+    catalog.name,
+      style: const TextStyle(fontWeight: FontWeight.bold),),
+    padding: const EdgeInsets.all(4),
+    decoration:const BoxDecoration(
+    color:Colors.yellow,
     )
-    );
+    ));
+  }
+}
+
+
+class CatalogImage extends StatelessWidget {
+
+final String image;
+
+  const CatalogImage({super.key, required this.image});
+  @override
+  Widget build(BuildContext context)
+  {
+    return Image.asset(image);
   }
 }
 
 
 class CatalogHeader extends StatelessWidget {
+  const CatalogHeader({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -103,7 +143,8 @@ class CatalogHeader extends StatelessWidget {
           ),
           // Padding(padding:EdgeInsets.all(4.0)),
           Text(" Most common health issues",
-            style: TextStyle(
+            style: TextStyle
+              (
               fontWeight:FontWeight.w400,
             ),
           ),
