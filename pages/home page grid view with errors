@@ -1,0 +1,113 @@
+//home page coding in flutter
+import 'package:flutter/material.dart';
+import 'package:flutter_projects/models/catalog.dart';
+import '../widgets/drawer.dart';
+import '../widgets/item_widget.dart';
+
+class HomePage extends StatelessWidget {
+  final int days = 30; //integer type value
+  final String name = "Ritvik"; //string type of value
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor:Colors.white70,
+      body:SafeArea(
+        child: Container(
+          padding:EdgeInsets.all(32.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children:[
+              CatalogHeader(),
+              if (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
+                Expanded
+                  (
+                    child: CatalogGrid()
+                )
+        else
+          const Center(
+            child: CircularProgressIndicator(),
+          )
+          ]
+
+        ),
+      )
+    )
+    );
+  }
+}
+
+
+class CatalogGrid extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+      shrinkWrap: true,
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount
+          (
+          crossAxisCount:2,
+          mainAxisSpacing:16,
+          crossAxisSpacing: 16,
+        ),
+        itemBuilder:(context, index)
+        {
+    final catalog = CatalogModel.items[index];
+    return CatalogItem( catalog: catalog,);
+
+    }
+    );
+  }
+}
+
+class CatalogItem extends StatelessWidget {
+   final Item catalog;
+   const CatalogItem({required this.catalog})
+       :assert(catalog != null);
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        child: GridTile(
+          child: Image.asset(catalog.image),
+        footer: Container(
+      child: Text(
+      catalog.name,
+        style: const TextStyle(fontWeight: FontWeight.bold),),
+        padding: const EdgeInsets.all(4),//PADDING is for name section on grid illness
+        decoration:const BoxDecoration(
+          color:Colors.yellow,
+        ),
+    ),
+    )
+    );
+  }
+}
+
+
+class CatalogHeader extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children:const [
+          Text
+            (
+            "  Let's make you Healthy",
+            style: TextStyle
+              (
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: Colors.red,
+            ),
+          ),
+          // Padding(padding:EdgeInsets.all(4.0)),
+          Text(" Most common health issues",
+            style: TextStyle(
+              fontWeight:FontWeight.w400,
+            ),
+          ),
+        ]
+    );
+  }
+}
