@@ -14,35 +14,35 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final int days = 30;
- //integer type value
+  //integer type value
   final String name = "Ritvik";
 
- //string type of value
+  //string type of value
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Colors.white70,
-      body:SafeArea(
-        child: Container(
-          padding:const EdgeInsets.all(32.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children:[
-              const CatalogHeader(),
-              if (CatalogModel.items.isNotEmpty)
-                const Expanded
-                  (
-                    child: CatalogGrid()
-                )
-        else
-          const Center(
-            child: CircularProgressIndicator(),
-          )
-          ]
+        backgroundColor:Colors.white70,
+        body:SafeArea(
+            child: Container(
+              padding:const EdgeInsets.all(32.0),
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children:[
+                    const CatalogHeader(),
+                    if (CatalogModel.items.isNotEmpty)
+                      const Expanded
+                        (
+                          child: CatalogGrid()
+                      )
+                    else
+                      const Center(
+                        child: CircularProgressIndicator(),
+                      )
+                  ]
 
-        ),
-      )
-    )
+              ),
+            )
+        )
     );
   }
 }
@@ -54,7 +54,8 @@ class CatalogGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      shrinkWrap: true,
+      itemCount: 10,
+        shrinkWrap: true,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount
           (
           crossAxisCount:2,
@@ -63,56 +64,56 @@ class CatalogGrid extends StatelessWidget {
         ),
         itemBuilder:(context, index)
         {
-    final catalog = CatalogModel.items[index];
-    return InkWell(
-      onTap: ()=>Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context)=>HomeDetailPage(
-                  catalog: catalog,
+          final catalog = CatalogModel.items[index];
+          return InkWell(
+              onTap: ()=>Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context)=>HomeDetailPage(
+                    catalog: catalog,
+                  ),
+                ),
               ),
-          ),
-      ),
-        child: CatalogItem( catalog: catalog)
-    );
+              child: CatalogItem( catalog: catalog)
+          );
 
-    }
+        }
     );
   }
 }
 
 class CatalogItem extends StatelessWidget {
-   final Item catalog;
-   // ignore: use_key_in_widget_constructors
-   const CatalogItem({required this.catalog});
+  final Item catalog;
+  // ignore: use_key_in_widget_constructors
+  const CatalogItem({required this.catalog});
 
 
   @override
   Widget build(BuildContext context) {
     return GridTile(
-      child:
+        child:
         Column(
-            children:[ 
+            children:[
               CatalogImage(
-            image:catalog.image,
-        ),
-    ]),
-      footer: Container(
-    child: Text(
-    catalog.name,
-      style: const TextStyle(fontWeight: FontWeight.bold),),
-    padding: const EdgeInsets.all(4),
-    decoration:const BoxDecoration(
-    color:Colors.yellow,
-    )
-    ));
+                image:catalog.image,
+              ),
+            ]),
+        footer: Container(
+            child: Text(
+              catalog.name,
+              style: const TextStyle(fontWeight: FontWeight.bold),),
+            padding: const EdgeInsets.all(4),
+            decoration:const BoxDecoration(
+              color:Colors.yellow,
+            )
+        ));
   }
 }
 
 
 class CatalogImage extends StatelessWidget {
 
-final String image;
+  final String image;
 
   const CatalogImage({super.key, required this.image});
   @override
