@@ -1,33 +1,35 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import '../models/precaution.dart';
+import 'package:flutter_projects/models/catalog.dart';
+import 'package:flutter_projects/pages/Exercies_and_medication.dart';
 import '../utils/routes.dart';
 class Precautions extends StatelessWidget {
-  final thing precau;
-  const Precautions({Key? key, required this.precau})
-      :assert(precau!= null),
+  final Item catalog;
+  const Precautions({Key? key, required this.catalog})
+      :assert(catalog!= null),
         super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.orangeAccent,
-        appBar: AppBar(
-          backgroundColor: Colors.transparent,
-          title:Text("Precautionary Measures"),
-        ),
-        floatingActionButton: FloatingActionButton.extended(
-          onPressed: ()=>Navigator.pushNamed(context, MyRoutes.exerciseRoute),
-          icon: Icon(Icons.monitor_heart_outlined), label: Text("Medications"),
-        ),
-    body: Column(
-      children:[
-        Container(
-          child: Text(),
-        )
-      ],
-    ),
+      backgroundColor: Colors.orangeAccent,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        title:Text("Precautionary Measures"),
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: ()=>Navigator.push(context, MaterialPageRoute(
+            builder: (context)=>Exercise(catalog: catalog)
+        )),
+        icon: Icon(Icons.monitor_heart_outlined), label: Text("Medications"),
+      ),
+      body: Column(
+        children:[
+          Container(
+            child: Text(catalog.precautions),
+          )
+        ],
+      ),
     );
   }
 }
