@@ -12,7 +12,7 @@ class Precautions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orangeAccent,
+      backgroundColor: Colors.orange,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title:Text("Precautionary Measures"),
@@ -23,13 +23,30 @@ class Precautions extends StatelessWidget {
         )),
         icon: Icon(Icons.monitor_heart_outlined), label: Text("Medications"),
       ),
-      body: Column(
-        children:[
-          Container(
-            child: Text(catalog.precautions),
-          )
-        ],
-      ),
-    );
+      body: Center(
+        child: Column(
+          children:[
+            Container(
+              padding: EdgeInsets.all(50),
+              color:Colors.orangeAccent,
+              child: Image.asset(catalog.image),
+              
+            ),
+             Container(
+                 padding: EdgeInsets.all(20),
+                  child:  Text(catalog.precautions),
+               decoration: BoxDecoration(
+                 gradient:LinearGradient(
+                     colors: [Colors.yellow,Colors.deepOrange]
+
+                 )
+               ),
+             ),
+                
+            ]
+        ),
+      ));
+
+
   }
 }
