@@ -1,29 +1,33 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import '../models/precaution.dart';
+import '../utils/routes.dart';
 class Precautions extends StatelessWidget {
-  const Precautions({Key? key}) : super(key: key);
+  final thing precau;
+  const Precautions({Key? key, required this.precau})
+      :assert(precau!= null),
+        super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orangeAccent,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        title:Text("Precautionary Measures"),
-      ),
-      body: Column(
-        children: [
-          Expanded(
-              child: SingleChildScrollView(
-                child: Container(
-                  padding: const EdgeInsets.all(20),
-                  alignment: Alignment.topCenter,
-                  color: Colors.red,
-                  child: (Text("hello",
-                  )),
-                ),
-              ))
-        ],
-      )
-   );
+        backgroundColor: Colors.orangeAccent,
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          title:Text("Precautionary Measures"),
+        ),
+        floatingActionButton: FloatingActionButton.extended(
+          onPressed: ()=>Navigator.pushNamed(context, MyRoutes.exerciseRoute),
+          icon: Icon(Icons.monitor_heart_outlined), label: Text("Medications"),
+        ),
+    body: Column(
+      children:[
+        Container(
+          child: Text(),
+        )
+      ],
+    ),
+    );
   }
 }
