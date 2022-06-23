@@ -5,69 +5,97 @@ class CatalogModel{
   Item(
   id:1,
   name:"Cleanliness",
-  desc:"kepping the surroundings and yourself clean is the key to healthy life",
-  color:"#33505a",
+  desc:"Keeping the body clean has positive effects on a person's social life and their physical and mental health. Personal hygiene is simply looking after the body and keeping it clean and healthy. Developing and maintaining a personal hygiene routine is key to having a healthy body and mind.",
+  precautions:"Reduce the usage of your electrical appliances "
+      "Drive your car less "
+      "Reduce the usage of your wooden stove"
+      " Maintain a healthy eco system"
+      " Reduce usage of chemicals and pesticides"
+      " Recycle the waste products"
+      " Reduce carbon footprints Grow your food locally",
+    Exercise:"Use less paper "
+        "Use less amount of energy"
+        "Don't use plastic bags on regular occasions",
+    color:"#33505a",
   image:"assets/images/clean.png",),
      Item(
          id:2,
          name:"Headache",
-         desc:" The main symptom of a headache is a pain in your head or face. This can be throbbing, constant, sharp or dull. Headaches can be treated with medication, stress management and biofeedback.",
-         color:"#33505a",
+         desc:" Headache is one of the most common pain conditions in the world. Up to 75% of adults worldwide have had a headache in the past yearHeadaches are a major cause of absenteeism from work and school. They also take a toll on social and family life. For some people, continually battling headaches can lead to feeling anxious and depressed",
+       precautions:"Precautions to take 2",
+       Exercise:" Move the muscles on regular time",
+       color:"#33505a",
          image:"assets/images/headache.png",
      ),
 
      Item(
-       id:1,
+       id:3,
        name:"Eye Pain",
        desc:"Iritis or uveitis: An inflammation inside your eye from trauma, infections, or problems with your immune system. Symptoms include pain, red eye,",
+       precautions:"Precautions to take 3",
+       Exercise:" Move the muscles on regular time",
        color:"#33505a",
        image:"assets/images/eyeball.png",),
      Item(
-       id:3,
+       id:4,
        name:"Muscle Pain and Soreness",
        desc:" Muscle pain, or myalgia, is a sign of an injury, infection, disease or other health problem. You may feel a deep, steady ache or random sharp pains. Some people have muscle pain all over",
+       precautions:"Precautions to take 4",
+       Exercise:" Move the muscles on regular time",
        color:"#33505a",
        image:"assets/images/muscle.png",
      ),
      Item(
-       id:1,
+       id:5,
        name:"Chest Pain",
        desc:"Discomfort in the chest including a dull ache, a crushing or burning feeling, a sharp stabbing pain and pain that radiates to the neck or shoulder.",
+       precautions:"Precautions to take 5",
+       Exercise:" Move the muscles on regular time",
        color:"#33505a",
        image:"assets/images/chest_p.png",),
 
      Item(
-       id:1,
+       id:6,
        name:"Back Pain ",
        desc:"Physical discomfort occurring anywhere on the spine or back, ranging from mild to disabling.",
+       precautions:"Precautions to take 6",
+       Exercise:" Move the muscles on regular time",
        color:"#33505a",
        image:"assets/images/back_p.png",),
 
      Item(
-       id:1,
+       id:7,
        name:"Joint pain",
        desc:" It happens over time when the cartilage,the protective cushion in between the bones, wears away. The joints become painful and stiff. It develops slowly and usually occurs during middle age.",
+       precautions:"Precautions to take 7",
+       Exercise:" Move the muscles on regular time",
        color:"#33505a",
        image:"assets/images/pain-in-joints.png",),
      Item(
-       id:1,
+       id:8,
        name:"Stomach ache",
        desc:"Pain from inside the abdomen or the outer muscle wall, ranging from mild and temporary to severe and requiring emergency care.",
+       precautions:"Precautions to take 8",
+       Exercise:" Move the muscles on regular time",
        color:"#33505a",
        image:"assets/images/stomach.png",),
 
 
      Item(
-       id:1,
+       id:9,
        name:"Allergies",
        desc:"A condition in which the immune system reacts abnormally to a foreign substance normally harmless substance such as pollen, molds, animal dander, latex, certain foods and insect stings.",
+       precautions:"Precautions to take 9",
+       Exercise:" Move the muscles on regular time",
        color:"#33505a",
        image:"assets/images/allergies.png",),
 
      Item(
-       id:1,
+       id:10,
        name:"Cough and cold",
        desc:"A viral infection of your nose and throat (upper respiratory tract). It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold.",
+       precautions:"Precautions to take 10",
+       Exercise:" Move the muscles on regular time",
        color:"#33505a",
        image:"assets/images/cough and cold.png",),
 
@@ -77,12 +105,15 @@ class CatalogModel{
 
 
 class Item {
+
 final int id;
 final String name;
 final String desc;
+final String precautions;
+final String Exercise;
 final String color;
 final String image;
 
-Item({required this.id,required this.name,required this.desc,required this.color,required this.image});
+Item({required this.Exercise, required this.precautions, required this.id,required this.name,required this.desc,required this.color,required this.image});
 }
 
