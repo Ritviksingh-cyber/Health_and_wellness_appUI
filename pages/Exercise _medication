@@ -1,0 +1,52 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+import '../models/catalog.dart';
+import '../utils/routes.dart';
+
+class Exercise extends StatelessWidget {
+  final Item catalog;
+  const Exercise({Key? key, required this.catalog}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        title:Text("Exercise and medications"),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: ()=>Navigator.pushNamed(context, MyRoutes.homeRoute),
+        child: Icon(Icons.home),
+      ),
+      body: Column(
+        children:[
+          Container(
+            padding: EdgeInsets.all(50),
+            decoration: BoxDecoration(
+                gradient:LinearGradient(
+                    colors: [Colors.pink,Colors.white]
+
+                )
+            ),
+            child: Image.asset(catalog.image),
+
+          ),
+          SingleChildScrollView(
+            child: Container(
+              padding: EdgeInsets.all(20),
+              child: Text(catalog.Exercise),
+              decoration: BoxDecoration(
+                  gradient:LinearGradient(
+                      colors: [Colors.white,Colors.pink]
+
+                  )
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
