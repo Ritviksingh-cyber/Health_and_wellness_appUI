@@ -1,5 +1,6 @@
 import'package:flutter/material.dart';
 import 'package:flutter_projects/utils/routes.dart';
+import 'package:lottie/lottie.dart';
 class LoginPage extends StatefulWidget {
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -40,11 +41,9 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(
                   height: 30.0,
                 ),
-                 Image.asset(
-                    "assets/images/login_image.png",
-                    fit:BoxFit.fill,
-                    height:300,
-                  ),
+                 Center(
+                   child: Lottie.network("https://assets3.lottiefiles.com/packages/lf20_jcikwtux.json")
+                 ),
 
                 const SizedBox(
                   height:30.0,
