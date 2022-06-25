@@ -31,3 +31,4 @@ class CatalogItem extends StatelessWidget {
   }
 }
 
+
