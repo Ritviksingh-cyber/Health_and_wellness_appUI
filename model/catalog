@@ -131,4 +131,3 @@ final String image1;
 Item( {required this.image1, required this.Exercise, required this.precautions, required this.id,required this.name,required this.desc,required this.color,required this.image});
 }
 
-
