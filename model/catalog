@@ -6,26 +6,32 @@ class CatalogModel{
   id:1,
   name:"Cleanliness",
   desc:"Keeping the body clean has positive effects on a person's social life and their physical and mental health. Personal hygiene is simply looking after the body and keeping it clean and healthy. Developing and maintaining a personal hygiene routine is key to having a healthy body and mind.",
-  precautions:"Reduce the usage of your electrical appliances "
-      "Drive your car less "
-      "Reduce the usage of your wooden stove"
-      " Maintain a healthy eco system"
-      " Reduce usage of chemicals and pesticides"
-      " Recycle the waste products"
+  precautions:"Reduce the usage of your electrical appliances and drive your car less as it will cause less pollution"
+      "  Reduce the usage of your wooden stove as it will "
+      " Maintain a healthy eco system and it can also be done by,"
+      " Reduce usage of chemicals and pesticides."
+      " Recycle the waste products."
       " Reduce carbon footprints Grow your food locally",
     Exercise:"Use less paper "
         "Use less amount of energy"
         "Don't use plastic bags on regular occasions",
     color:"#33505a",
-  image:"assets/images/clean.png",),
+  image:"assets/images/clean.png",
+    image1:"assets/images/cleanliness.jpg",),
+
      Item(
          id:2,
          name:"Headache",
          desc:" Headache is one of the most common pain conditions in the world. Up to 75% of adults worldwide have had a headache in the past yearHeadaches are a major cause of absenteeism from work and school. They also take a toll on social and family life. For some people, continually battling headaches can lead to feeling anxious and depressed",
-       precautions:"Precautions to take 2",
-       Exercise:" Move the muscles on regular time",
+       precautions:"Watch what you eat and drink as the wrong food will lead to frequent headaches"
+           " And don't skip your meals. "
+           " Be careful with the physical work as it may lead to pump back of veins of your head or fore head"
+           " And Finally take less stress and be happy"
+       ,
+       Exercise:"Sit up tall with your buttock against the back of the seat and back straight against the back of the chair. Bring your chin towards the front of your throat without tilting the head. A funny analogy I like to make is “give yourself a double chin without tilting the skull down”. Hold this position for 5 seconds and then relax. Repeat this 10 times each hour.",
        color:"#33505a",
          image:"assets/images/headache.png",
+         image1:"assets/images/chintucks.jpg",
      ),
 
      Item(
@@ -35,7 +41,9 @@ class CatalogModel{
        precautions:"Precautions to take 3",
        Exercise:" Move the muscles on regular time",
        color:"#33505a",
-       image:"assets/images/eyeball.png",),
+       image:"assets/images/eyeball.png",
+       image1:"assets/images/chintucks.jpg",
+     ),
      Item(
        id:4,
        name:"Muscle Pain and Soreness",
@@ -44,6 +52,7 @@ class CatalogModel{
        Exercise:" Move the muscles on regular time",
        color:"#33505a",
        image:"assets/images/muscle.png",
+         image1:"assets/images/chintucks.jpg",
      ),
      Item(
        id:5,
@@ -52,7 +61,8 @@ class CatalogModel{
        precautions:"Precautions to take 5",
        Exercise:" Move the muscles on regular time",
        color:"#33505a",
-       image:"assets/images/chest_p.png",),
+       image:"assets/images/chest_p.png",
+       image1:"assets/images/chintucks.jpg",),
 
      Item(
        id:6,
@@ -61,7 +71,8 @@ class CatalogModel{
        precautions:"Precautions to take 6",
        Exercise:" Move the muscles on regular time",
        color:"#33505a",
-       image:"assets/images/back_p.png",),
+       image:"assets/images/back-pain.png",
+       image1:"assets/images/chintucks.jpg",),
 
      Item(
        id:7,
@@ -70,7 +81,8 @@ class CatalogModel{
        precautions:"Precautions to take 7",
        Exercise:" Move the muscles on regular time",
        color:"#33505a",
-       image:"assets/images/pain-in-joints.png",),
+       image:"assets/images/pain-in-joints.png",
+       image1:"assets/images/chintucks.jpg",),
      Item(
        id:8,
        name:"Stomach ache",
@@ -78,7 +90,8 @@ class CatalogModel{
        precautions:"Precautions to take 8",
        Exercise:" Move the muscles on regular time",
        color:"#33505a",
-       image:"assets/images/stomach.png",),
+       image:"assets/images/stomach.png", image1:"assets/images/chintucks.jpg",
+     ),
 
 
      Item(
@@ -88,7 +101,7 @@ class CatalogModel{
        precautions:"Precautions to take 9",
        Exercise:" Move the muscles on regular time",
        color:"#33505a",
-       image:"assets/images/allergies.png",),
+       image:"assets/images/allergies.png", image1:"assets/images/chintucks.jpg",),
 
      Item(
        id:10,
@@ -97,7 +110,7 @@ class CatalogModel{
        precautions:"Precautions to take 10",
        Exercise:" Move the muscles on regular time",
        color:"#33505a",
-       image:"assets/images/cough and cold.png",),
+       image:"assets/images/cough and cold.png", image1:"assets/images/chintucks.jpg",),
 
   ];
 }
@@ -113,7 +126,9 @@ final String precautions;
 final String Exercise;
 final String color;
 final String image;
+final String image1;
 
-Item({required this.Exercise, required this.precautions, required this.id,required this.name,required this.desc,required this.color,required this.image});
+Item( {required this.image1, required this.Exercise, required this.precautions, required this.id,required this.name,required this.desc,required this.color,required this.image});
 }
+
 
