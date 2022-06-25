@@ -20,53 +20,53 @@ class Exercise extends StatelessWidget {
         child: const Icon(Icons.home),
       ),
       body: Container(
-          color: Colors.transparent,
-          child: SafeArea(
-            child: Column(
-              children: [
-                Container(
-                  padding: const EdgeInsets.all(50),
+        color: Colors.transparent,
+        child: SafeArea(
+          child: Column(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(50),
 
-                  decoration: const BoxDecoration(
-                    gradient: LinearGradient(colors: [Colors.grey,Colors.grey]),
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(colors: [Colors.grey,Colors.grey]),
 
-                        borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                  borderRadius: BorderRadius.all(Radius.circular(30.0)),
 
 
-                  ),
-                  child: Image.asset(catalog.image1),
                 ),
-                Expanded(
-                  child: SingleChildScrollView(
-                    child: Container(
+                child: Image.asset(catalog.image1),
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Container(
 
-                      padding: const EdgeInsets.all(20),
-                      alignment: Alignment.topCenter,
-                      width: 400,
-                      height: 400,
+                    padding: const EdgeInsets.all(20),
+                    alignment: Alignment.topCenter,
+                    width: 400,
+                    height: 400,
 
-                      decoration: const BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(60.0)),
-                        gradient:LinearGradient(
-                            colors: [Colors.red,Colors.white]
-
-                        ),
+                    decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(60.0)),
+                      gradient:LinearGradient(
+                          colors: [Colors.red,Colors.white]
 
                       ),
-                      child: Expanded(
-                        child: (
-                            Text(catalog.Exercise)),
-                      ),
+
                     ),
-
+                    child: Expanded(
+                      child: (
+                          Text(catalog.Exercise)),
+                    ),
                   ),
-                )
 
-              ],
-            ),
+                ),
+              )
 
+            ],
           ),
+
         ),
-      );
+      ),
+    );
   }
 }
