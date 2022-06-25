@@ -1,7 +1,8 @@
-//home page coding in flutter
+       //home page coding in flutter
 import 'package:flutter/material.dart';
 import 'package:flutter_projects/models/catalog.dart';
 import 'package:flutter_projects/widgets/drawer.dart';
+import '../../widgets/home_widget/SearchBar.dart';
 import '../../widgets/home_widget/catalog_header.dart';
 import '../../widgets/home_widget/cataloggrid.dart';
 
@@ -20,13 +21,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 25,
-        actions: const [
-          Icon(Icons.search_outlined),
-        ],
-        actionsIconTheme: const IconThemeData(
-          size: 30,
-        ),
-        title:const Text(
+       title:const Text(
           "Remidicious",
           style: TextStyle(
               fontSize: 25,
@@ -45,6 +40,7 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children:[
+                    SearchBar(),
                     const CatalogHeader(),
                     if (CatalogModel.items.isNotEmpty)
                       const Expanded
