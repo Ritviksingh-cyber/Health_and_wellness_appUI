@@ -34,13 +34,18 @@ class _LoginPageState extends State<LoginPage> {
         child:SingleChildScrollView(
           child: Form(
             key:_formkey,
+
             child: Column(
               children: [
-                Image.asset(
-                  "assets/images/login_image.png",
-                  fit:BoxFit.fill,
-                  height:300,
+                const SizedBox(
+                  height: 30.0,
                 ),
+                 Image.asset(
+                    "assets/images/login_image.png",
+                    fit:BoxFit.fill,
+                    height:300,
+                  ),
+
                 const SizedBox(
                   height:30.0,
                   child: Text("Heya",
@@ -116,12 +121,12 @@ class _LoginPageState extends State<LoginPage> {
                             (
                               "Login",
                               style: TextStyle(
-                                  color:Colors.white,
+                                  color:Colors.black,
                                   fontWeight: FontWeight.bold,
                                   fontSize:18)
                           ),
                           decoration: BoxDecoration(
-                              color: Colors.lightBlueAccent,
+                              color: Colors.red,
                               borderRadius: BorderRadius.circular(changeButton?20:10.0)
 
                           ),
@@ -130,11 +135,11 @@ class _LoginPageState extends State<LoginPage> {
                     ],
                   ),
                 )
-              ],
-            ),
+
+          ])),
           ),
-        )
-    );
+        );
+
 
   }
 }
