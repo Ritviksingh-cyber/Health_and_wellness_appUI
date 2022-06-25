@@ -1,6 +1,7 @@
 //home page coding in flutter
 import 'package:flutter/material.dart';
 import 'package:flutter_projects/models/catalog.dart';
+import 'package:flutter_projects/widgets/drawer.dart';
 import '../../widgets/home_widget/catalog_header.dart';
 import '../../widgets/home_widget/cataloggrid.dart';
 
@@ -17,6 +18,26 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        elevation: 25,
+        actions: const [
+          Icon(Icons.search_outlined),
+        ],
+        actionsIconTheme: const IconThemeData(
+          size: 30,
+        ),
+        title:const Text(
+          "Remidicious",
+          style: TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+              fontStyle: FontStyle.italic
+          ),
+        ),
+            centerTitle:true,
+      ),
+
+      drawer: MyDrawer(),
         backgroundColor:Colors.white70,
         body:SafeArea(
             child: Container(
@@ -38,7 +59,8 @@ class _HomePageState extends State<HomePage> {
 
               ),
             )
-        )
+        ),
+
     );
   }
 }
