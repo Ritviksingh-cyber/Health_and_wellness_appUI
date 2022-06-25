@@ -1,8 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_projects/models/catalog.dart';
 import 'package:flutter_projects/pages/Exercies_and_medication.dart';
-import '../utils/routes.dart';
 class Precautions extends StatelessWidget {
   final Item catalog;
   const Precautions({Key? key, required this.catalog})
@@ -12,40 +10,58 @@ class Precautions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orange,
+      backgroundColor: Colors.orangeAccent,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
-        title:Text("Precautionary Measures"),
+        title:const Text("Precautionary Measures"),
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: ()=>Navigator.push(context, MaterialPageRoute(
             builder: (context)=>Exercise(catalog: catalog)
         )),
-        icon: Icon(Icons.monitor_heart_outlined), label: Text("Medications"),
+        icon: const Icon(Icons.monitor_heart_outlined), label: const Text("Exercises"),
       ),
-      body: Center(
-        child: Column(
-          children:[
-            Container(
-              padding: EdgeInsets.all(50),
-              color:Colors.orangeAccent,
-              child: Image.asset(catalog.image),
-              
-            ),
-             Container(
-                 padding: EdgeInsets.all(20),
-                  child:  Text(catalog.precautions),
-               decoration: BoxDecoration(
-                 gradient:LinearGradient(
-                     colors: [Colors.yellow,Colors.deepOrange]
+      body:  Container(
+        color: Colors.orangeAccent,
+        child: SafeArea(
+          child: Column(
+            children: [
+              Container(
+                color:Colors.orangeAccent,
+                padding: const EdgeInsets.all(50),
+                child: Image.asset(catalog.image),
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Container(
 
-                 )
-               ),
-             ),
-                
-            ]
+                    padding: const EdgeInsets.all(20),
+                    alignment: Alignment.topCenter,
+                    width: 400,
+                    height: 400,
+
+                    decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(60.0)),
+                      gradient:LinearGradient(
+                          colors: [Colors.yellow,Colors.redAccent]
+
+                      ),
+
+                    ),
+                    child: Expanded(
+                      child: (
+                          Text(catalog.precautions)),
+                    ),
+                  ),
+
+                ),
+              )
+
+            ],
+          ),
+
         ),
-      ));
+      ),);
 
 
   }
