@@ -5,4 +5,6 @@ class MyRoutes
   static String homeDetailsRoute="/details";
   static String precautionRoute="/precautions";
   static String exerciseRoute="/Exercises_and_medication";
+  static String doctorRoute="/Doctor";
+
 }
