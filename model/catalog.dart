@@ -15,12 +15,16 @@ class CatalogModel{
           " \n4. wipe off the excessive sweat from body "
           " \n5. throw the waste products properly."
           " \n6. Use sanitizer to clan the surrounding",
-      Exercise:"NO EXERCISES TO KEP CLEANLINESS IT'S ALL IN THE HABIT SO MAKE YOUR HABITS HEALTHY AND CLEAN ",
+      Exercise:"NO EXERCISES TO KEEP CLEANLINESS IT'S ALL IN THE HABIT SO MAKE YOUR HABITS HEALTHY AND CLEAN ",
       color:"#33505a",
+      doctor:"Well to be specific you are the specialist of your own cleanliness and health"
+          "\n if you clean yourself and your surrounding clean than that is the best part",
       image:"assets/images/clean.png",
-      image1:"assets/images/cleanliness.jpg",),
+      image1:"assets/images/cleanliness.jpg",
+  image2:"assets/images/medical-team.png",),
 
-    Item(
+
+  Item(
       id:2,
       name:"Headache",
       desc:" Headache is one of the most common pain conditions in the world.\n"
@@ -39,8 +43,19 @@ class CatalogModel{
           " make is “give yourself a double chin without tilting the skull down”. "
           "Hold this position for 5 seconds and then relax. Repeat this 10 times each hour.",
       color:"#33505a",
+      doctor:"A doctor who specializes in neurology is called a neurologist. The neurologist treats disorders that affect the brain, spinal cord, and nerves, such as:"
+          "\nCerebrovascular disease, such as strok "
+          "\nDemyelinating diseases of the central nervous system, such as multiple sclerosis"
+          "\nHeadache disorders"
+          "\nInfections of the brain and peripheral nervous system"
+          "\nMovement disorders, such as Parkinson's disease"
+          "\nNeurodegenerative disorders, such as Alzheimer's disease, Parkinson's disease, and Amyotrophic Lateral Sclerosis (Lou Gehrig's disease)"
+          "\nSeizure disorders, such as epilepsy"
+          "\nSpinal cord disorders"
+          "\nSpeech and language disorders",
       image:"assets/images/headache.png",
       image1:"assets/images/chintucks.jpg",
+  image2:"assets/images/medical-team.png",
     ),
 
     Item(
@@ -61,9 +76,18 @@ class CatalogModel{
           "\n you can also ue eye drops or as a home remedy can also put honey "
           "in your eyes but we will suggests not to put honey in eyes as it may be painful",
       color:"#33505a",
+      doctor:"Based on the condition of your problem related to your eyes you can visit any of the specialists below"
+          "\nOptician-They are eye care professionals, who are qualified to provide, fit and repair eyeglasses, contact lenses, and frames. They:"
+          "Take facial measurements for glasses.Fill the prescription provided by an eye specialist."
+          "\nOphthalmologists - eye specialists who specialize in eye and vision care. "
+          "They diagnose and treat all eye diseases, perform eye surgeries."
+          "\nCornea specialist can help in dealing with diseases that affect the "
+          "cornea (a transparent layer that covers the front of the eye)."
+          "\n Retina specialist is the one who diagnoses, treats and manages retinal diseases such as macular degeneration or diabetic retinopathy. ",
       image:"assets/images/eyeball.png",
       image1:"assets/images/EYE.jpg",
-    ),
+  image2:"assets/images/medical-team.png",),
+
     Item(
       id:4,
       name:"Muscle Pain and Soreness",
@@ -87,9 +111,13 @@ class CatalogModel{
           "\n4.You can also perform Russian Twists"
           "\n5.And you can also take bath from warm water for instant relief",
       color:"#33505a",
+      doctor:"Often muscle pain is treated by rheumatologists but osteopaths specialize in the muscle/skeletal system and"
+          " there are kinesiologist and chiropracters in the alternative health fields.",
       image:"assets/images/muscle.png",
       image1:"assets/images/YOGA.jpg",
-    ),
+  image2:"assets/images/medical-team.png",
+  ),
+
     Item(
       id:5,
       name:"Chest Pain",
@@ -118,12 +146,20 @@ class CatalogModel{
           "Wee will recommend you not to take any heavy doses of medication "
       ,
       color:"#33505a",
+      doctor:"What did a cardiologist do?"
+          "\n A cardiologist is a physician who's an expert in the care of your heart and blood vessels. They can treat or help you prevent a number of cardiovascular problems. They can"
+    "also specialize in specific areas "
+          "such as abnormal heart rhythms, heart failure or heart problems you have had since birth",
       image:"assets/images/chest_p.png",
-      image1:"assets/images/PAS.jpg",),
+      image1:"assets/images/PAS.jpg",
+  image2:"assets/images/medical-team.png",),
 
     Item(
       id:6,
       name:"Back Pain ",
+      doctor:"A spine specialist is a health professional who focuses mainly on treating spine conditions. "
+          "Common specialists include chiropractors, physiatrists, physical therapists, orthopedic surgeons, neurosurgeons, "
+          "pain management physicians, anesthesiologists, and many rheumatologists and neurologists.",
       desc:" Back pain is the most common form of issue in human body ,Physical discomfort"
           " occurring anywhere on the spine or back, ranging from mild to disabling.They can range from mild to severe aches"
           "They can range from muscle aching to shooting to joints or bone issue on long terms"
@@ -148,7 +184,8 @@ class CatalogModel{
           " and you can alos include the portion of calisthenic for mobility as advised by the creator",
       color:"#33505a",
       image:"assets/images/back-pain.png",
-      image1:"assets/images/SURYA.jpg",),
+      image1:"assets/images/SURYA.jpg",
+  image2:"assets/images/medical-team.png",),
 
     Item(
       id:7,
@@ -175,8 +212,11 @@ class CatalogModel{
           "\n you can alo include zumba or wide range eof aerobic exercises"
           "well you can also do hula-hoops",
       color:"#33505a",
+      doctor:"Definition of orthopedist "
+          "\nA specialist in orthopedics : a doctor who specializes in the branch of medicine concerned with the correction or prevention of deformities, disorders, or injuries of the skeleton and associated structure",
       image:"assets/images/pain-in-joints.png",
-      image1:"assets/images/RUN.jpg",),
+      image1:"assets/images/RUN.jpg",
+  image2:"assets/images/medical-team.png",),
     Item(
       id:8,
       name:"Stomach ache",
@@ -202,8 +242,15 @@ class CatalogModel{
           "This yoga move may also help alleviate bloating"
           "\nApanasana Knees to Chest is a gentle movement that can be relaxing and relieve lower back strain.",
       color:"#33505a",
+      doctor:"Gastroenterology is the study of the normal function and diseases of the esophagus, "
+          "stomach, small intestine, colon and rectum, pancreas, gallbladder, bile ducts and liver. It involves a detailed understanding of the normal action (physiology) of the gastrointestinal organs including the movement of material through the stomach and intestine (motility), the digestion and absorption of nutrients into the body, removal of waste from the system, "
+          "and the function of the liver as a digestive organ. It includes common and impor"
+          "tant conditions"
+          "\nThe unique training that Gastroenterologists complete provides them with the ability to provide high quality, comprehensive care for patients with a wide variety of gastrointestinal ailments. Gastroenterologists perform the bulk of research involving gastrointestinal endoscopic procedures "
+          "as well as the interpretation of results, and are considered experts in the field.  ",
       image:"assets/images/stomach.png",
       image1:"assets/images/APAAN.jpg",
+  image2:"assets/images/medical-team.png",
     ),
     Item(
       id:9,
@@ -231,8 +278,10 @@ class CatalogModel{
           "\n stretching of upper abdomen"
           "\n in yoga you can perform anulom vilom ",
       color:"#33505a",
+      doctor:"An allergist is a physician who specializes in the diagnosis and treatment of asthma and other allergic diseases. The allergist is specially trained to identify allergy and asthma triggers.",
       image:"assets/images/allergies.png",
-      image1:"assets/images/AV.jpg",),
+      image1:"assets/images/AV.jpg",
+  image2:"assets/images/medical-team.png",),
 
     Item(
       id:10,
@@ -262,8 +311,10 @@ class CatalogModel{
           "inversion stretch which rejigs and invigorates your entire body, "
           "improves blood flow, protects sinuses and relieves cough and congestion symptoms in an easy manner.",
       color:"#33505a",
+      doctor:"To start with you can consult a general physician to diagnose and treat your persistent cough. If it still continues to be severe, your GP will refer you to a specialist like a pulmonologist, gastroenterologist, cardiologist, or an allergist, depending on your underlying causes",
       image:"assets/images/cough and cold.png",
-      image1:"assets/images/UTA.jpg",),
+      image1:"assets/images/UTA.jpg",
+  image2:"assets/images/medical-team.png",),
 
   ];
 }
@@ -278,8 +329,11 @@ class Item {
   final String precautions;
   final String Exercise;
   final String color;
+  final String doctor;
   final String image;
   final String image1;
+  final String image2;
 
-  Item( {required this.image1, required this.Exercise, required this.precautions, required this.id,required this.name,required this.desc,required this.color,required this.image});
+  Item({required this.image2, required this.doctor,  required this.image1, required this.Exercise, required this.precautions, required this.id,required this.name,required this.desc,required this.color,required this.image});
 }
+
