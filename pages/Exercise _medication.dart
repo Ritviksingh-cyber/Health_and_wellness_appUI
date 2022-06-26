@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:newapp/pages/doctor.dart';
 
 import '../models/catalog.dart';
-import '../utils/routes.dart';
+
 
 class Exercise extends StatelessWidget {
   final Item catalog;
@@ -15,9 +16,11 @@ class Exercise extends StatelessWidget {
         backgroundColor: Colors.transparent,
         title:const Text("Exercise and medications"),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: ()=>Navigator.pushNamed(context, MyRoutes.homeRoute),
-        child: const Icon(Icons.home),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: ()=>Navigator.push(context, MaterialPageRoute(
+            builder: (context)=>Doctor(catalog: catalog)
+        )),
+        icon: const Icon(Icons.monitor_heart_outlined), label: const Text("Specialists"),
       ),
       body: Container(
         color: Colors.transparent,
