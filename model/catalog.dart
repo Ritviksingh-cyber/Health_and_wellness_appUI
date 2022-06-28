@@ -316,6 +316,358 @@ class CatalogModel{
       image1:"assets/images/UTA.jpg",
   image2:"assets/images/medical-team.png",),
 
+    Item(
+      id:11,
+      name:"Bruises",
+      desc:" A bruise forms when a blow breaks blood vessels near your skin's surface, "
+          "allowing a small amount of blood to leak into the tissues under your skin. "
+          "The trapped blood may cause a bruise that at first looks like a black-and-blue"
+          " mark and then changes color as it heals."
+          "\n Bruising can have causes that aren't due to underlying disease."
+          " Examples include blunt trauma, injury, recent IV use or drawing blood.",
+      precautions:"Precautions to take"
+          "\nYou can enhance bruise healing with a few simple techniques. Remember RICE, for rest, ice, compress and elevate:"
+          "\nRest the bruised area, if possible."
+          "\nIce the bruise with an ice pack wrapped in a towel. Leave it in place for 10 to 20 minutes. Repeat several times a day for a day or two as needed."
+          "\nCompress the bruised area if it is swelling, using an elastic bandage. Don't make it too tight."
+      "\nElevate the injured area",
+      Exercise:" Exercises for faster recovery"
+          "\n Yoga reduces bruising in three ways:"
+          "\n Cardiovascular exercise strengthens the blood vessels and capillaries and makes them less "
+          "likely to break during trauma. With regular Yoga practice, bumps that would have left a bruise"
+          " are no longer a problem.Yoga provides stretching and massaging of tissues. The dark color of a "
+          "bruise is from the blood in the surrounding tissues. As the blood breaks down, the red hemoglobin "
+          "changes to green biliverdin, then to yellow bilirubin and finally to brownish hemosiderin. "
+          "Light massage and stretching speeds the breakdown and can clear the area faster, making the bruising less obvious."
+          "Yoga increases body awareness. Much of the average person's bruising results from misjudging spacial relationships, "
+          "such a running into a doorway or banging one's shins on a coffee table. Concentrating on how the body feels improves"
+          " coordination and reduces the chance of slamming a body part into furniture.",
+      color:"#33505a",
+      doctor:"All general medicine and family medicine specialists treat hematomas"
+          " and bruises. Other health care professionals who treat hematomas and bruises include:"
+          "\nUrgent care specialists"
+          "\nEmergency room doctors"
+          "\nGeneral surgeons"
+          "\nNeurosurgeons"
+          "\nDermatologists"
+          "\nNurse practitioners and nurses"
+          "\nInternal medicine specialists"
+          "\nPediatricians"
+          "\nThe specialists who are involved with treating hematomas and bruising"
+          " often depend on any associated symptoms and whether internal organs have an injury"
+          "associated symptoms and whether internal organs have an injury",
+      image:"assets/images/bruises.png",
+      image1:"assets/images/bruga.jpg",
+      image2:"assets/images/medical-team.png",),
+
+    Item(
+      id:12,
+      name:"Swelling",
+      desc:"Swelling is the enlargement of organs, skin, or other body parts. "
+          "It is caused by a buildup of fluid in the tissues. "
+          "The extra fluid can lead to a rapid increase in weight over a short period of time (days to weeks). "
+          "Swelling can occur all over the body (generalized) or only in one part of the body (localized)."
+          "Slight swelling (edema) of the lower legs is common in warm summer months, especially if a person has been standing or walking a lot."
+          "General swelling, or massive edema (also called anasarca), is a common sign in people who are very sick."
+          "Although slight edema may be hard to detect, a large amount of swelling is very obvious.",
+      precautions:"Precautions to take"
+          "\nMild edema usually goes away on its own, particularly if you help things along by raising the affected limb higher than your heart."
+          "\nMovement. Moving and using the muscles in the part of your body affected by edema, especially your legs, may help pump the excess fluid back toward your heart. Ask your doctor about exercises you can do that may reduce swelling."
+          "\nElevation. Hold the swollen part of your body above the level of your heart several times a day. In some cases, elevating the affected body part while you sleep may be helpful."
+          "\nMassage. Stroking the affected area toward your heart using firm, but not painful, pressure may help move the excess fluid out of that area.",
+      Exercise:"Exercises to perform for faster relief"
+          "\nShoulder Stand-Shoulder stand is usually reserved for more-practiced yogis, as it puts your neck and shoulders"
+          " in a potentially compromising position. Include it as a finishing pose in an extended yoga practice."
+          " It's an inversion, so it helps fluid flow from heavy, swollen legs, ankles and feet."
+          "\nLegs up the Wall"
+          "Legs up the Wall is the consummate way to combat edema in your lower body."
+          " Variations of the posture include butterflying the legs against the wall or opening the legs into a wide V. ",
+      color:"#33505a",
+      doctor:"Podiatrist-If your swelling persists even after getting off your feet, you should make an appointment with "
+          "your podiatrist to diagnose any underlying conditions that could be causing the symptoms.",
+      image1:"assets/images/swelli.jpg",
+      image2:"assets/images/medical-team.png",
+      image: "assets/images/swelling.png",),
+
+    Item(
+      id:13,
+      name:"Tooth Ache",
+      desc:"Tooth aches are the pain and inflamations around the tooth ,often caused by tooth decay or infection"
+          "They may be caused due the following conditions as given below:"
+          "\nTooth decay"
+          "\nAbscessed tooth "
+          "\nA damaged filling in the tooth "
+          "\n infected gums"
+          "The main symptoms of tooth decay include are sharp pain, throbbing,or constant.In some people , pain results only "
+          "when pressure is applied to the tooth",
+      precautions:"Precautions to take"
+          "\nUntil you can see your dentist, try these self-care tips for a toothache:"
+          "\nRinse your mouth with warm water"
+          "\nUse dental floss to remove any food particles or plaque wedged between your teeth"
+          "\nConsider taking an over-the-counter (OTC) pain reliever to dull the ache, but don't place aspirin or another painkiller directly against your gums because it may burn your gum tissue."
+          "\nIf the toothache is caused by trauma to the tooth, apply a cold compress to the outside of your cheek.",
+
+      Exercise:" Exercises for faster recover"
+          "\nSukshma Yoga"
+          "\nOpen and close your jaw alternately while massaging your temporomandibular joint. This keeps the stress away from the angle of the jaw and relieves the pain, if any"
+          "\nKhechari Mudra"
+          "\nSit in a comfortable position, close your eyes and draw the top of the tongue along the roof of the mouth towards the back of the nostrils to the upper throat, hold it in that position with your mouth closed this is an excellent practice to stimulate saliva"
+          "",
+      color:"#33505a",
+      doctor:"A dentist, also known as a dental surgeon, is a health care professional who specializes "
+          "in dentistry (the diagnosis, prevention, and treatment of diseases and conditions of the "
+          "oral cavity",
+      image:"assets/images/tooth.png",
+      image1:"assets/images/suksh.jpg",
+      image2:"assets/images/medical-team.png",),
+
+    Item(
+      id:14,
+      name:"Menstruation Cramps",
+      desc:"Menstrual cramps (dysmenorrhea) are throbbing or cramping pains in the lower abdomen."
+          " Many women have menstrual cramps just before and during their menstrual periods."
+          "For some women, the discomfort is merely annoying. For others, menstrual cramps can"
+          " be severe enough to interfere with everyday activities for a few days every month."
+          "Conditions such as endometriosis or uterine fibroids can cause menstrual cramps. "
+          "Treating the cause is key to reducing the pain. "
+          "Menstrual cramps that aren't caused by another condition tend to lessen with age and often improve after giving birth."
+          "\nSymptoms of menstrual cramps include"
+          "\nThrobbing or cramping pain in your lower abdomen that can be intense "
+          "in that starts 1 to 3 days before your period, peaks 24 hours after the onset of your period and subsides in 2 to 3 day"
+          "\nDull, continuous ache"
+          "\nPain that radiates to your lower back and thighs",
+      precautions:"Precautions to take"
+          "\nFollow a healthy diet high in fiber and essential fats"
+          "\nDrink more water during your period cramps"
+          "\nApply heat: hot bath or shower will do"
+          "\nExercise to get rid of menstrual pain"
+          "\nKeep track of your period symptoms to prevent cramps"
+          "You can also take medicines like ibuprofen (Advil, Motrin IB, others) or naproxen sodium (Aleve),",
+          Exercise: "Cobra, Cat, Cow and Fish yoga poses are a few good exercises for you to try"
+              "\nCobra Pose: Lie on your stomach with your legs straight and feet together,"
+              " and place your hands under your shoulders. Using your hands to push you, lift your head and shoulders. "
+              "Breathe deeply. Hold this pose for 30 to 60 seconds,"
+              "\nCat/Cow Pose: Get on your hands and knees. "
+              "Make sure your hands are directly under your shoulders, and your knees are directly under your hips. "
+              "Take a deep breath in, and lower your belly toward the ground,",
+      color:"#33505a",
+      doctor:"A gynecologist is a doctor who specializes in female reproductive health. "
+          "They diagnose and treat issues related to the female reproductive tract."
+          " This includes the uterus, fallopian tubes, and ovaries and breasts. "
+          "Anyone with female organs may see a gynecologist."
+          "Gynecologists give reproductive and sexual health services that include pelvic exams, "
+          "Pap tests, cancer screenings, and testing and treatment for vaginal infections."
+          "They diagnose and treat reproductive system disorders such as endometriosis, "
+          "infertility, ovarian cysts, and pelvic pain. They may also care for people with ovarian, cervical, and other reproductive cancers."
+          "Some gynecologists also practice as obstetricians, who give care during pregnancy and birth. "
+          "If a gynecologist has expertise in obstetrics, they’re called an OB-GYN.",
+      image:"assets/images/mensturation.png",
+      image1:"assets/images/MENS.png",
+      image2:"assets/images/medical-team.png",),
+
+    Item(
+      id:15,
+      name:"Obesity",
+      desc:"Obesity is a complex disease involving an excessive amount of body fat. "
+          "Obesity isn't just a cosmetic concern. It's a medical problem that increases the "
+          "risk of other diseases and health problems, such as heart disease, diabetes, "
+          "high blood pressure and certain cancers."
+          "There are many reasons why some people have difficulty losing weight."
+          " Usually, obesity results from inherited, physiological and environmental factors, combined with diet,"
+          " physical activity and exercise choices."
+          "\n Body mass index (BMI) is often used to diagnose obesity. To calculate BMI, multiply weight in pounds by 703, divide by height in inches and then divide again by height in inches. Or divide weight in kilograms by height in meters squared."
+          "\n Asians with BMI of 23 or higher may have an increased risk of health problems.",
+      precautions:"Precautions to take"
+          "\nUnhealthy diet. A diet that's high in calories, lacking in fruits and vegetables, full of fast food, "
+          "and laden with high-calorie beverages and oversized portions contributes to weight gain."
+          "\nLiquid calories. People can drink many calories without feeling full, especially calories from alcohol. "
+          "Other high-calorie beverages, such as sugared soft drinks, can contribute to significant weight gain."
+          "\nInactivity. If you have a sedentary lifestyle, you can easily take in more calories every day than you burn"
+          " through exercise and routine daily activities. Looking at computer, tablet and phone screens is a sedentary "
+          "activity. The number of hours spent in front of a screen is highly associated with weight gain.",
+      Exercise:" Exercises for faster recovery"
+          "\nWalking is one of the best exercises for weight loss — and for good reason."
+          "It’s convenient and an easy way for beginners to start exercising without feeling "
+          "overwhelmed or needing to purchase equipment. Also, it’s a lower-impact exercise,"
+          " meaning it doesn’t stress your joints."
+          "\nYoga"
+          "Yoga is a popular way to exercise and relieve stress."
+          "While it’s not commonly thought of as a weight loss exercise, it burns a fair amount of calories and offers many additional health benefits that can promote weight loss.",
+      color:"#33505a",
+      doctor:"Some healthcare providers specialize in treating obese or overweight people. "
+          "These healthcare providers are called bariatric healthcare providers or bariatricians. "
+          "Some of these healthcare providers may also be bariatric surgeons. Bariatric surgeons are trained"
+          " to do surgery that aids in weight loss."
+          "Obesity is when body fat is above a certain level. Body mass index (BMI) is a common way to measure obesity.",
+      image:"assets/images/obesity.png",
+      image1:"assets/images/obese.jpg",
+      image2:"assets/images/medical-team.png",),
+
+    Item(
+      id:16,
+      name:"fever",
+      desc:"A fever is a temporary rise in body temperature. It's one part of an overall response from the"
+          " body's immune system. A fever is usually caused by an infection."
+          "For most children and adults, a fever may be uncomfortable. But it usually isn't a cause for concern."
+          " For infants, however, even a low fever may mean there's a serious infection."
+          "Fevers generally go away within a few days. A number of over-the-counter medications lower a fever."
+          " But you don't necessarily need to treat a fever if it's not causing discomfort"
+          "Body temperatures vary slightly from person to person and at different times of day."
+          " The average temperature has traditionally been defined as 98.6 F (37 C). A temperature "
+          "taken using a mouth thermometer (oral temperature) that's 100 F (37.8 C) or higher is generally "
+          "considered to be a fever.",
+      precautions:"Precautions to take"
+          "\nDrink plenty of fluid to regulate your body tenperature"
+          "\nGet plenty of rest"
+          "\nGet over time counter medication"
+          "\nkeep your body cool"
+          "\ntake home remedies of herbs"
+          "\nkudzu root is the best herb in this condition"
+          ,
+      Exercise:"Exercises for faster recovery"
+          "\n Nadi Shodhan Pranayama"
+          "\nShitali Pranayama"
+          "\n Anulom Vilom Pranayam"
+          "\n Kapalbhati Pranayam"
+          "\n Sarvangasana"
+          "\nMatsyasana",
+      color:"#33505a",
+      doctor:"In condition of general fever you can go to "
+          "your family doctor or internist they will provide you for"
+          "medicines"
+          "\n You can also take medicines like Paracetamol,acetaminophen",
+      image:"assets/images/fever.png",
+      image1:"assets/images/kapalbhati.jpg",
+      image2:"assets/images/medical-team.png",),
+
+    Item(
+      id:17,
+      name:"Nose Bleeding",
+      desc:"Simply put, a nosebleed is the loss of blood from the tissue that lines the inside of your nose."
+          "Nosebleeds (also called epistaxis) are common. Some 60% of people will have at least one nosebleed"
+          " in their lifetime. The location of the nose in the middle of the face and the large number of blood "
+          "vessels close to the surface in the lining of your nose make it an easy target for injury and nosebleeds."
+          "Although seeing blood coming out of your noise can be alarming, most nosebleeds are not serious and can be"
+          " managed at home. Some, however, should be checked by your doctor.  ",
+      precautions:"Precautions to take"
+          "\n Follow these steps to stop a nosebleed:Relax."
+          "\nSit upright and lean your body and your head slightly forward. This will keep the blood from running down your throat, which can cause nausea, vomiting, and diarrhea. (Do NOT lay flat or put your head between your legs.)"
+          "Breathe through your mouth."
+          "\nUse a tissue or damp washcloth to catch the blood."
+          "\nUse your thumb and index finger to pinch together the soft part of your nose. ",
+      Exercise:" Exercises for faster recovery are given below"
+          "\nAnulom Vilom Pranayama-Anulom Vilom pranayama is a breathing technique and it helps remove the congestion of the nasal passage. It aids free flow of air. It also improves blood flow to the brain "
+          "\nBhujangasana (Cobra pose)-Bhujangasana or the cobra pose is one of the best yoga poses for your lungs. It helps you breathe easily. It also relieves backache, aids weight loss and cures thyroid and gynaecological conditions."
+          "\nKapalbhati"
+          "\n Ustrasana (Camel pose)",
+      color:"#33505a",
+      doctor:"Frequent epistaxis may require intervention from an otolaryngologist, a medical professional commonly known as an Ear, Nose, and Throat (ENT) doctor."
+          "What is Otolaryngology?"
+          "Otolaryngology is a medical specialty which is focused on the ears, nose, and throat."
+          " It is also called otolaryngology-head and neck surgery because specialists are trained in "
+          "both medicine and surgery.  An otolaryngologist is often called an ear, nose, and throat doctor, "
+          "or an ENT for short.",
+      image:"assets/images/nose-bleeding.png",
+      image1:"assets/images/kapalbhati.jpg",
+      image2:"assets/images/medical-team.png",),
+
+    Item(
+      id:18,
+      name:"Anxiety",
+      desc:"Anxiety is a feeling of fear, dread, and uneasiness. It might cause you to sweat,"
+          " feel restless and tense, and have a rapid heartbeat. It can be a normal reaction to stress."
+          " For example, you might feel anxious "
+          "when faced with a difficult problem at work, before taking a test, or before making an important decision"
+          "Anxiety disorders are conditions in which you have anxiety that does not go away and can get worse over time."
+          " The symptoms can interfere with daily activities such as job performance, schoolwork, and relationships ",
+      precautions:"Precautions to take"
+          "The main treatments for anxiety disorders are psychotherapy (talk therapy), medicines, or both:"
+          "\nCognitive behavioral therapy (CBT) is a type of psychotherapy that is often used to treat anxiety disorders. CBT teaches you different ways of thinking and behaving. It can help you change how you react to the things that cause you to feel fear and anxiety. It may include exposure therapy. This focuses on having you confront your fears so that you will be able to do the things that you had been avoiding."
+          "\nMedicines to treat anxiety disorders include anti-anxiety medicines and certain antidepressants. Some types of medicines may work better for specific types of anxiety disorders. You should work closely with your health care provider to identify which medicine is best for you. You may need to try more than one medicine before you can find the right one.",
+      Exercise:" Exercises for faster recovery basically include yoga poses like"
+          "\nHero Pose"
+          "\nTree pose"
+          "\nTriagle pose"
+          "\nStanding forward bend "
+          "\nFish pose"
+          "\nHead to knee forward bend ",
+      color:"#33505a",
+      doctor:"A psychiatrist is a physician who specializes in psychiatry, the branch of medicine devoted to the diagnosis, "
+          "prevention, study, and treatment of mental disorders. Psychiatrists are physicians and evaluate patients to determine"
+          " whether their symptoms are the result of a physical illness, a combination of physical and mental ailments or"
+          " strictly mental issues. Sometimes a psychiatrist works within a multi-disciplinary team, which may comprise "
+          "clinical psychologists, social workers, occupational therapists, and nursing staff. "
+          "Psychiatrists have broad training in a bio-psycho-social approach to the assessment and management of mental illness.",
+      image:"assets/images/Anxiety.png",
+      image1:"assets/images/triangle.jpg",
+      image2:"assets/images/medical-team.png",),
+
+    Item(
+      id:19,
+      name:"Depression",
+      desc:"Depression (major depressive disorder) is a common and serious medical illness that negatively affects how you feel,"
+          " the way you think and how you act. Fortunately, it is also treatable. "
+          "Depression causes feelings of sadness and/or a loss of interest in activities you once enjoyed. "
+          "It can lead to a variety of emotional and physical problems and can decrease your ability to function"
+          " at work and at home. ",
+      precautions:"Precautions to take"
+          "\nThere’s no sure way to prevent depression. But you can:"
+          "\nFind ways to handle stress and improve your self-esteem."
+          "\nTake good care of yourself. Get enough sleep, eat well, and exercise regularly."
+          "\nReach out to family and friends when times get hard."
+          "\nGet regular medical checkups, and see your provider if you don’t feel right. "
+          "\nget help if you think you’re depressed. If you wait, it could get worse.",
+      Exercise:" Exercises for faster recovery basically include yoga poses like"
+          "\nHero Pose"
+          "\nTree pose"
+          "\nTriagle pose"
+          "\nStanding forward bend "
+          "\nFish pose"
+          "\nHead to knee forward bend ",
+      color:"#33505a",
+      doctor:"A psychiatrist is a physician who specializes in psychiatry, the branch of medicine devoted to the diagnosis, "
+    "prevention, study, and treatment of mental disorders. Psychiatrists are physicians and evaluate patients to determine"
+        " whether their symptoms are the result of a physical illness, a combination of physical and mental ailments or"
+        " strictly mental issues. Sometimes a psychiatrist works within a multi-disciplinary team, which may comprise "
+        "clinical psychologists, social workers, occupational therapists, and nursing staff. ",
+      image:"assets/images/dipression.png",
+      image1:"assets/images/MENS.jpg",
+      image2:"assets/images/medical-team.png",),
+
+    Item(
+      id:20,
+      name:"Diabetes",
+      desc:"Diabetes is a disease that occurs when your blood glucose, also called blood sugar,"
+          " is too high. Blood glucose is your main source of energy and comes from the food you eat. "
+          "Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy. "
+          "Sometimes your body doesn’t make enough—or any—insulin or doesn’t use insulin well. Glucose then stays in your "
+          "blood and doesn’t reach your cells."
+          "Over time, having too much glucose in your blood can cause health problems."
+          " Although diabetes has no cure, you can take steps to manage your diabetes and stay healthy. ",
+      precautions:"Precautions to take"
+          "Lose weight"
+          "Lower your blood sugar"
+          "Boost your sensitivity to insulin — which helps keep your blood sugar within a normal range"
+          " Eat healthy plant foods"
+          "Plants provide vitamins, minerals and carbohydrates in your diet. Carbohydrates include sugars and starches — "
+          "the energy sources for your body — and fiber. Dietary fiber, also known as roughage or bulk, is the part of plant"
+          " foods your body can't digest or absorb.",
+      Exercise:" Exercises for faster recovery"
+          "\nWalking"
+          "\nSwimming"
+          "\nRunning"
+          "\nWeight lifting"
+          "\nPilates "
+          "\nYoga"
+          "\nResistance training",
+      color:"#33505a",
+      doctor:"Endocrinologists work to ensure that the different systems in the body communicate well with each other by correcting hormonal imbalances. Endocrinologists perform a series of tests to understand the problem, determine the best treatment and help patients with lifestyle changes (when possible) that can improve the medical condition."
+          "They are best suited for diabestes",
+      image:"assets/images/diabetes.png",
+      image1:"assets/images/diab.jpg",
+      image2:"assets/images/medical-team.png",),
+
+
   ];
 }
 
@@ -334,6 +686,6 @@ class Item {
   final String image1;
   final String image2;
 
-  Item({required this.image2, required this.doctor,  required this.image1, required this.Exercise, required this.precautions, required this.id,required this.name,required this.desc,required this.color,required this.image});
+  Item( {required this.image2, required this.doctor,  required this.image1, required this.Exercise, required this.precautions, required this.id,required this.name,required this.desc,required this.color,required this.image});
 }
 
